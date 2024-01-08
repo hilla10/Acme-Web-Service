@@ -1,0 +1,415 @@
+:root {
+    --bg-primary-color: rgb(244, 67, 54);
+    --bg-secondary-color: rgb(97, 97, 97);
+    --btn-bg-color: rgb(244, 67, 54);
+    --btn-bg-hover-color: #ccc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 55px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #fff;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--btn-bg-color);
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--btn-bg-hover-color);
+    color: #000;
+}
+
+.btn-outline {
+    color: #000;
+    font-size: 16px;
+}
+
+.btn-outline:hover {
+    background: var(--btn-bg-hover-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: #000;
+    color: #fff;
+    z-index: 2;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 18px;
+    padding-top: 7px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nav ul li {
+    padding-top: 6px;
+}
+
+.nav ul li a {
+    color: #fff;
+    font-size: 15px;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background-color: var(--bg-primary-color);
+}
+
+
+/* Showcase */
+
+.showcase-a {
+    background: url('../img/showcase.jpg') no-repeat center center / cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.showcase-a h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.showcase-a p {
+    padding: 15px 0;
+}
+
+.showcase-a hr {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--bg-primary-color);
+}
+
+/* Section A */
+
+.section-a,
+.section-d {
+    background: var(--bg-primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.section-a:hover,
+.section-b:hover,
+.section-d:hover,
+.section-f:hover {
+    opacity: 0.60;
+}
+
+i {
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+P {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/* Section B */
+
+.section-b,
+.section-e {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+/* Section C */
+
+.section-c .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    background-color: #000;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: all 0.4s ease;
+}
+
+.accordion-header:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.accordion-header h4 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-header:hover .accordion-content {
+    max-height: 500px;
+}
+
+.accordion-content h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/* Section-d  */
+.section-d {
+    margin-top: 30px;
+}
+
+/* Section E */
+
+.section-e .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.section-e i {
+    color: #fff;
+    background: var(--bg-primary-color);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+.section-e h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+/* Section F */
+
+.section-f {
+    background: var(--bg-secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.section-f h1 {
+    margin-top: 35px;
+}
+
+/* Form */
+
+form {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+        0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 50px 0;
+}
+
+.form-header {
+    background: var(--bg-secondary-color);
+    color: #fff;
+    padding: 3px 15px;
+}
+
+.form-header h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.form-container {
+    padding: 15px 20px;
+}
+
+label {
+    display: block;
+    font-size: 17px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 17px;
+    color: #333;
+}
+
+.form-container label:nth-child(5) {
+    padding-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    height: 80px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* Footer */
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Media Queries */
+
+@media(min-width: 60px) {
+    .container {
+        max-width: 630px;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 968px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .section-e .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 630px) {
+    header {
+        height: auto;
+    }
+
+    .nav,
+    .nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav ul li {
+        padding: 8px 0;
+    }
+
+    .section-e .grid,
+    .section-c .grid {
+        grid-template-columns: 1fr;
+        margin: 0 15px;
+    }
+
+
+
+    form {
+        margin: 50px 20px;
+    }
+
+    header {
+        position: static;
+    }
+}
